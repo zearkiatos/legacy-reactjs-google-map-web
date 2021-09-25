@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import GoogleMap from './GoogleMap';
 
 class App extends Component {
   constructor(props) {
@@ -12,10 +11,6 @@ class App extends Component {
     return (
       <div style={{height: '100%'}}>
         Map me!
-        <button onClick={() => this.setState({ lat: 40.7128, lng: -74.0059 })}>
-          New York
-        </button>
-        <GoogleMap lat={this.state.lat} lng={this.state.lng} />
       </div>
     );
   }
